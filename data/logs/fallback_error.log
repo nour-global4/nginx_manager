@@ -1,0 +1,35 @@
+2022/02/02 10:26:11 [alert] 314#314: 1024 worker_connections are not enough
+2022/02/02 10:26:11 [error] 315#315: *1706 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2022/02/02 10:26:18 [error] 314#314: *2 directory index of "/var/www/html/graph2/" is forbidden, client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /graph2/ HTTP/1.1", host: "localhost"
+2022/02/02 10:28:03 [error] 315#315: *1734 directory index of "/var/www/html/" is forbidden, client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET / HTTP/1.1", host: "host.docker.internal"
+2022/02/02 10:28:05 [warn] 314#314: 1024 worker_connections are not enough, reusing connections
+2022/02/02 10:28:05 [alert] 314#314: 1024 worker_connections are not enough
+2022/02/02 10:28:05 [error] 315#315: *3562 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "host.docker.internal", referrer: "http://host.docker.internal/"
+2022/02/02 10:29:25 [warn] 340#340: 1024 worker_connections are not enough, reusing connections
+2022/02/02 10:29:25 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:29:25 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:31:59 [warn] 340#340: 1024 worker_connections are not enough, reusing connections
+2022/02/02 10:31:59 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:31:59 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:37:24 [error] 340#340: *7017 directory index of "/var/www/html/leads/" is forbidden, client: 172.23.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/ HTTP/1.1", host: "localhost"
+2022/02/02 10:37:47 [warn] 340#340: 1024 worker_connections are not enough, reusing connections
+2022/02/02 10:37:47 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:37:47 [alert] 340#340: 1024 worker_connections are not enough
+2022/02/02 10:40:23 [error] 307#307: *5 directory index of "/var/www/html/leads/" is forbidden, client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/ HTTP/1.1", host: "localhost"
+2022/02/02 10:40:23 [warn] 307#307: 1024 worker_connections are not enough, reusing connections
+2022/02/02 10:40:23 [alert] 307#307: 1024 worker_connections are not enough
+2022/02/02 10:40:23 [error] 308#308: *1834 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/leads/"
+2022/02/02 10:40:24 [error] 307#307: *5 directory index of "/var/www/html/leads/" is forbidden, client: 172.24.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/ HTTP/1.1", host: "localhost"
+2022/02/02 10:57:36 [error] 306#306: *1 directory index of "/var/www/html/leads/public/" is forbidden, client: 172.27.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/public/ HTTP/1.1", host: "localhost"
+2022/02/02 10:57:37 [alert] 306#306: 1024 worker_connections are not enough
+2022/02/02 10:57:37 [error] 307#307: *1875 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/leads/public/"
+2022/02/02 10:57:45 [error] 306#306: *1 directory index of "/var/www/html/leads/public/" is forbidden, client: 172.27.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/public/ HTTP/1.1", host: "localhost"
+2022/02/02 10:58:11 [error] 306#306: *1 directory index of "/var/www/html/graph2/public/" is forbidden, client: 172.27.0.1, server: localhost-nginx-proxy-manager, request: "GET /graph2/public/ HTTP/1.1", host: "localhost"
+2022/02/02 11:00:10 [warn] 306#306: 1024 worker_connections are not enough, reusing connections
+2022/02/02 11:00:10 [alert] 306#306: 1024 worker_connections are not enough
+2022/02/02 11:00:10 [alert] 306#306: 1024 worker_connections are not enough
+2022/02/02 11:07:33 [error] 324#324: *3608 directory index of "/var/www/html/graph2/public/" is forbidden, client: 172.27.0.1, server: localhost-nginx-proxy-manager, request: "GET /graph2/public/ HTTP/1.1", host: "localhost"
+2022/02/02 11:16:10 [error] 282#282: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: nginxproxymanager, request: "GET /api/ HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "localhost:81", referrer: "http://localhost:81/nginx/proxy"
+2022/02/02 11:20:04 [error] 307#307: *7 directory index of "/var/www/html/leads/public/" is forbidden, client: 172.28.0.1, server: localhost-nginx-proxy-manager, request: "GET /leads/public/ HTTP/1.1", host: "localhost"
+2022/02/02 11:20:05 [alert] 307#307: 1024 worker_connections are not enough
+2022/02/02 11:20:05 [error] 308#308: *1899 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "localhost", referrer: "http://localhost/leads/public/"

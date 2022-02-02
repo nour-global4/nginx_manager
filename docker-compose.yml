@@ -1,0 +1,58 @@
+version: '3'
+
+networks:
+  project:
+
+services:
+
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    container_name: nginx_manager
+    ports:
+      - '80:80'
+      - '443:443'
+      - '81:81'
+    volumes:
+      - ./data:/data
+
+  mysql:
+    image: mariadb:10.6
+    container_name: mysql_master
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: master
+      MYSQL_USER: master
+      MYSQL_PASSWORD: master
+      MYSQL_ROOT_PASSWORD: secret
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./dbdata:/var/lib/mysql
+    networks:
+      - project
+
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog_master
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - project
+
+
+#  cron:
+#    build:
+#      context: .
+#      dockerfile: cron.dockerfile
+#    container_name: cron
+#    volumes:
+#      - ./src:/var/www/html
+#    networks:
+#      - project
+
